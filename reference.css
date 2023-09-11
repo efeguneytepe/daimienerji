@@ -1,0 +1,96 @@
+.ref-image {
+  width: 100%;
+  position: relative;
+}
+.ref-image > h1 {
+  position: absolute;
+  top: 170px;
+  left: 18%;
+  color: white;
+  z-index: 2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 5rem;
+  text-shadow: 2px 2px 1px black;
+  display: inline-block;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.ref-image > h1:hover {
+  font-size: 6rem;
+  text-shadow: 2px 2px 1px orange;
+}
+.ref-image > h1:hover img {
+  opacity: 1;
+}
+.ref-image > img {
+  width: 100%;
+  height: 500px;
+  opacity: 0.7;
+  z-index: -1;
+}
+.ref-intro {
+  padding: 100px 70px;
+}
+.ref-intro-header {
+  border: 2px solid orange;
+  color: white;
+  background-color: orange;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.ref-intro-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  padding-top: 30px;
+}
+.ref-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.ref-categories-box {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  background-color: orange;
+  border: none;
+  color: black;
+  margin-right: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+}
+.ref-categories-box:hover {
+  color: white;
+}
+.blank {
+  height: 100px;
+}
+.ref-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 100px;
+  background-color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.ref-item {
+  background-color: orange;
+  opacity: 0.6;
+  padding: 30px;
+  text-align: center;
+}
+.ref-item > img {
+  width: 300px;
+  height: auto;
+}
+.ref-item:hover {
+  opacity: 1;
+}

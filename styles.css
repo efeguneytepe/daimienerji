@@ -1,0 +1,679 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.header-logo > img {
+  width: auto;
+  height: 100px;
+}
+.header-premium-logo {
+  margin-left: 200px;
+}
+.header-premium-logo img {
+  margin-bottom: 10px;
+}
+
+.header-info {
+  float: right;
+  display: flex;
+}
+
+.header-right {
+  margin: 30px;
+}
+.header-right:last-child {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.header-right > p:first-child {
+  margin-bottom: 10px;
+  color: rgb(109, 109, 109);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-call {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.header-contact {
+  display: flex;
+  flex-direction: column;
+}
+.space {
+  margin-right: 20px;
+}
+
+nav {
+  border-top: 1px solid black;
+  background-color: orange;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin-left: 200px;
+}
+.menu > li {
+  padding: 25px;
+  display: inline-block;
+}
+.menu > li:hover {
+  background-color: white;
+  border-bottom: 3px solid black;
+  margin-bottom: -3px;
+  transition: all 0.3s ease;
+  box-shadow: 16px 16px;
+  font-weight: bold;
+}
+.menu > li:hover .services-dropdown a {
+  font-weight: 400;
+}
+.services-link {
+  position: relative;
+}
+.services-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 72px;
+  background-color: orange;
+  min-width: 195px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.services-dropdown a {
+  color: black;
+  padding: 25px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: 4px solid orange;
+  transition: all 0.3s ease;
+}
+
+.services-link:hover {
+  background-color: white;
+}
+
+.services-link:hover .services-dropdown {
+  display: block;
+  box-shadow: 16px 16px;
+}
+.services-link:hover > a:first-child {
+  font-weight: bold;
+}
+.services-dropdown a:hover {
+  background-color: rgb(233, 217, 115);
+  border-left: 3px solid white;
+}
+.menu > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome-image {
+  width: 100%;
+  height: 600px;
+  background-image: url(./photos/solar-panels-1224822604-c4966ef86487433fb863c3372dd3879b.jpeg);
+  position: relative;
+  z-index: -1;
+}
+.chart {
+  position: absolute;
+  right: 100px;
+  width: 600px;
+  top: 50px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 1.5px;
+  line-height: 32px;
+  box-shadow: 16px 16px;
+  border-top-left-radius: 5px;
+}
+.chart > h1 {
+  margin-bottom: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.chart > h3 {
+  margin-bottom: 25px;
+  text-shadow: 1px 1px #d7d5c9;
+}
+.catch-phrase {
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.catch-phrase-image > img {
+  position: absolute;
+  z-index: -2;
+  top: -200px;
+  right: 400px;
+  width: 500px;
+  height: auto;
+}
+.top-button {
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+.top-button > a > img {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+}
+#second-line {
+  margin-left: 75px;
+}
+
+.introduction {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+.introduction-image {
+  width: 50%;
+}
+
+.introduction-text {
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  word-spacing: 1.5px;
+  line-height: 32px;
+}
+.introduction-text > p:first-child {
+  margin-bottom: 40px;
+}
+.stages {
+  display: flex;
+}
+.stages-box {
+  width: 25%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.stages-box:nth-child(odd) {
+  /* background-color: orange; */
+  background-color: #ededed;
+}
+.stages-box:nth-child(even) {
+  /* background-color: rgb(222, 206, 100); */
+  background-color: #dbdbdb;
+}
+.stages-box-image {
+  padding: 50px;
+}
+.stages-box-text {
+  padding: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+.photo-gallery-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: -70px;
+  margin-top: 20px;
+}
+.photo-gallery-header > h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+}
+.photo-gallery {
+  height: 700px;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+.photo-gallery-container {
+  height: 500px;
+  border: 1px solid black;
+  width: 80%;
+  position: relative;
+}
+.photo-gallery-content {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: 4px 4px 2px;
+}
+.photo-gallery-content > img {
+  width: auto;
+  height: 498px;
+}
+.photo-gallery-button {
+  position: absolute;
+  top: 230px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-weight: 600;
+  box-shadow: 2px 2px 1px;
+}
+.photo-gallery-button:hover {
+  background-color: rgb(224, 224, 224);
+  color: black;
+}
+.photo-gallery-button:active {
+  box-shadow: none;
+}
+#right-button {
+  right: 20px;
+}
+#left-button {
+  left: 20px;
+}
+#solar-system-solutions {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.solar-system {
+  width: 100%;
+  height: auto;
+}
+.solar-system-intro {
+  background: linear-gradient(
+    rgb(255, 153, 0),
+    rgb(233, 217, 115)
+  ); /*rgb(222,206,100)*/
+  /* color: rgb(244, 244, 244); */
+  color: rgb(245, 245, 245);
+  /* text-shadow: 1px 1px white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+}
+.first-letter {
+  font-size: 6rem;
+  margin-right: 2px;
+}
+.solar-system-intro-header {
+  font-size: 2.2rem;
+  /* text-shadow: 1px 1px white; */
+  padding: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.solar-system-intro-header > h1:first-child {
+  margin-right: 100px;
+}
+.solar-system-intro-header > h1:last-child {
+  margin-left: 100px;
+}
+/* .underline {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-underline-offset: 10px;
+} */
+.why-solar-energy-container {
+  display: flex;
+  width: 100%;
+  max-height: 5000px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.why-solar-energy-box {
+  width: 33%;
+  height: 300px;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-top: 20px;
+  transition: width 1s ease;
+}
+.why-solar-energy-box > h2 {
+  /* text-shadow: 2px 2px black; */
+  color: black;
+}
+.why-solar-energy-box > img {
+  width: 33%;
+  margin-top: 100px;
+  height: auto;
+  opacity: 0.7;
+}
+.why-solar-energy-box:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+  transition-duration: 200ms;
+}
+.why-solar-energy-box:hover {
+  border-top: 4px solid black;
+  width: 31%;
+}
+.why-solar-energy-box > p {
+  color: black;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.solar-system-transition {
+  background: linear-gradient(rgb(233, 217, 115), rgb(233, 217, 115, 0.1));
+  width: 100%;
+}
+.solar-energy-types {
+  display: flex;
+  flex-direction: column;
+}
+.solar-energy-types-box {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.first-word {
+  font-size: 1.5rem;
+}
+.solar-energy-types-box:first-child {
+  background-color: white;
+  margin-top: 300px;
+}
+.solar-energy-types-box:last-child {
+  background-color: rgb(237, 237, 237);
+}
+.solar-energy-types-box > img {
+  width: 50%;
+  height: 350px;
+  border-radius: 10px;
+}
+.solar-energy-types-box-definition {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  text-align: center;
+}
+.solar-energy-types-box-definition > h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+.solar-energy-types-box-definition > p {
+  padding: 50px;
+  text-align: justify;
+  line-height: 1.3 rem;
+}
+.solar-energy-types-box-definition-button {
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.support {
+  width: 100%;
+  height: 220px;
+  background-color: black;
+  color: white;
+  margin-bottom: 100px;
+  /* position: relative; */
+}
+.support-message > h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 30px;
+  font-size: 2.5rem;
+}
+.support-message > h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.3rem;
+}
+.support-line {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 90%;
+  height: 100px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  box-shadow: 2px 4px 2px rgb(115, 115, 115);
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.support-line > img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+.support-line-tel {
+  border: orange;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: orange;
+  cursor: pointer;
+}
+.support-line-tel:hover {
+  color: white;
+  background-color: brown;
+  border: brown;
+}
+.mid-blank {
+  width: 100%;
+  height: 200px;
+}
+.services {
+  width: 100%;
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-header {
+  padding: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+}
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.services-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services-box > img {
+  width: 75%;
+  height: 300px;
+  border: 1px solid black;
+}
+.services-box > h2 {
+  padding: 50px;
+  font-size: 1.8rem;
+}
+.sensible {
+  width: 100%;
+  height: 600px;
+  background-image: url("./photos/grass.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sensible-inside {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.sensible-inside > h1 {
+  font-size: 5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.sensible-inside > p {
+  font-size: 1.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 100px;
+  text-align: justify;
+  line-height: 50px;
+}
+.business-partner {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.business-partner > h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2.8rem;
+}
+.business-partner > img {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+.contact {
+  background-color: rgb(255, 115, 0);
+  color: white;
+  display: flex;
+}
+.contact h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3.3rem;
+  margin-bottom: 50px;
+}
+.contact-text {
+  width: 50%;
+  padding: 50px;
+  line-height: 30px;
+}
+.second-header {
+  margin-left: 40px;
+}
+.contact-text-border {
+  width: 30%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 20px;
+}
+.contact-text > h3 {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.contact-text > p {
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact-form {
+  width: 50%;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-form > form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form > form > label {
+  margin-bottom: 5px;
+}
+.contact-form > form > input {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: white;
+}
+.contact-form > form > select {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: white;
+}
+.contact-form > form > button {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: black;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+footer {
+  height: 400px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+footer > div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer > div > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+footer > div > img {
+  width: auto;
+  height: 100px;
+}
+footer > div > h2 {
+  padding: 20px;
+}
