@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daimi Enerji</title>
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reference.css"/>
+    <link rel="icon" type="image/x-icon" href="./photos/favicon-96x96.png" />  </head>
+  <body>
+    <header>
+      <span class="header-logo" id="header-logo"
+        ><img src="./photos/logo.jpg" alt="Brand logo"
+      /></span>
+      <div class="header-info">
+        <span class="header-call header-right"
+          ><p>Hemen Arayın</p>
+          <p>
+            <b>+90</b>  532
+            494 33 12<span class="space"></span><b>+90</b>  532 677 18 35<span class="space"></span><b>+90</b> 542 434 20 77
+          </p></span
+        >
+        <span class="header-contact header-right"
+          ><p>Bize Buradan Ulaşabilirsiniz</p>
+          <p>info@daimienerji.com</p></span
+        >
+      </div>
+    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li class="services-link">
+          <a href="#">Hizmetlerimiz</a>
+          <div class="services-dropdown">
+            <a href="#">Arazi Tipi Ges Projeleri</a>
+            <a href="#">Çatı Tipi Ges Projeleri</a>
+          </div>
+        </li>
+        <li><a href="#">Ürünler</a></li>
+        <li><a href="reference.html">Referanslar</a></li>
+        <li><a href="#">Projeler</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <div class="ref-image">
+        <h1>Refereanslarımız</h1>
+        <img src="./photos/ref.jpeg">
+    </div>
+    </div>
+    <div class="ref-intro">
+        <div class="ref-intro-header">
+            <h3>Referanslarımız</h3>
+        </div>
+        <div class="ref-intro-text">
+            <h2>Yaşanılabilir bir dünya için</h2>
+            <h2>yenilenebilir enerjiye yatırım yapanlar</h2>
+        </div>
+        <div class="ref-categories">
+            <button class="ref-categories-box">Tüm referanslar</button>
+            <button class="ref-categories-box">Arazi Üstü</button>
+            <button class="ref-categories-box">Bireysel Çatı</button>
+            <button class="ref-categories-box">Endüstriyel Çatı</button>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="ref-container">
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    <div class="ref-item"><img src="./photos/Adsız tasarım.png"></div>
+    </div>
+    <footer>
+        <div>
+            <img src="photos/logo.jpg" />
+            <p>Her Daim Sizinle</p>
+          </div>
+          <div>
+            <h2>İletişim Numaralarımız</h2>
+       
+            <p>+90 532 494 33 12</p>
+            <p>+90 532 677 18 35</p>
+            <p>+90 542 434 20 77</p>
+          </div>
+          <div>
+            <h2>Adres</h2>
+            <p>
+              Yavuz Mahallesi, Sancar Sokak, No: 16/1<br />Süleymanpaşa/TEKİRDAĞ
+              <strong
+              >Süleymanpaşa/TEKİRDAĞ</strong
+              >
+            </p>
+          </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
