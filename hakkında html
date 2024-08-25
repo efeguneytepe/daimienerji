@@ -17,19 +17,17 @@
       <span class="header-logo" id="header-logo"
         ><img src="./photos/logo.jpg" alt="Brand logo"
       /></span>
-
-      </span>
       <div class="header-info">
         <span class="header-call header-right"
           ><p>Hemen Arayın</p>
           <p>
-            <b>+90</b> 532 494 33 12<span class="space"></span><b>+90</b> 532
+            <b>+90</b> 532 494 33 12 <span class="space"></span><b>+90</b> 532
             677 18 35 <span class="space"></span><b>+90</b> 542 434 20 77
           </p></span
         >
         <span class="header-contact header-right"
           ><p>Bize Buradan Ulaşabilirsiniz</p>
-          <p>ismail.cetinkaya@daimienerji.com</p></span
+          <p>info@daimienerji.com</p></span
         >
       </div>
     </header>
@@ -45,9 +43,9 @@
           </div>
         </li>
         <li><a href="#">Ürünler</a></li>
-        <li><a href="https://www.ibtsolar.com/referanslar/">Referanslar</a></li>
+        <li><a href="reference.html">Referanslar</a></li>
         <li><a href="#">Projeler</a></li>
-        <li><a href="#">İletişim</a></li>
+        <li><a href="contact.html">İletişim</a></li>
       </ul>
     </nav>
     <div class="welcome-image">
@@ -162,6 +160,7 @@
         <div class="photo-gallery-content">
           <img id="swipePhoto" src="./photos/photo1.jpeg" />
           <button type="button" id="left-button" class="photo-gallery-button">
+            <
           </button>
           <button type="button" id="right-button" class="photo-gallery-button">
             >
@@ -280,10 +279,7 @@
         <div>Solar Energy Corporate</div>
       </div>
       <div><h2>"Bize ulaşın, size yardımcı olalım"</h2></div>
-
-      <div class="support-line-tel">+90 532 494 33 12</div>
-      <div class="support-line-tel">+90 532 677 18 35</div>
-      <div class="support-line-tel">+90 542 434 20 77</div>
+      <div class="support-line-tel">+90 222 222 22 22</div>
     </div>
     <div class="mid-blank"></div>
     <div class="services">
@@ -384,9 +380,8 @@
       <div>
         <h2>Adres</h2>
         <p>
-          Yavuz Mahallesi, Sancar Sokak, No: 16/1<br /><strong
-            >Süleymanpaşa/TEKİRDAĞ</strong
-          >
+          Yavuz Mahallesi, Sancar Sokak, No: 16/1<br />Süleymanpaşa/TEKİRDAĞ
+          <strong>Süleymanpaşa/TEKİRDAĞ</strong>
         </p>
       </div>
     </footer>
