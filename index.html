@@ -336,13 +336,14 @@
       </div>
       <div class="contact-form">
         <h1>Bize Ulaşın</h1>
-        <form action="#">
+        <form id="contact-form">
           <label for="name">Adınız & Soyadınız:</label>
           <input
             type="text"
             id="name"
             name="contact-name"
             placeholder="Adınız & Soyadınız*"
+            required
           />
           <label for="from">İl ve İlçenizi Giriniz:</label>
           <input
@@ -350,9 +351,10 @@
             id="from"
             name="contact-from"
             placeholder="İlinizi ve İlçenizi Giriniz*"
+            required
           />
           <label for="domicile">Konut Tipinizi Seçiniz:</label>
-          <select id="domicile" name="contact-domicile">
+          <select id="domicile" name="contact-domicile" required>
             <option value="" disabled selected>Konut Tipinizi Seçiniz</option>
             <option value="müstakil-ev">Müstakil Ev</option>
             <option value="apartman">Apartman</option>
@@ -360,15 +362,17 @@
           </select>
           <label for="phone">Cep Numaranız:</label>
           <input
-            type="number"
+            type="tel"
             id="phone"
             name="contact-phone"
             placeholder="Cep Numaranız*"
+            required
           />
           <button type="submit">Gönder</button>
         </form>
       </div>
     </div>
+    
     <footer>
       <div>
         <img src="photos/logo.jpg" />
@@ -391,5 +395,21 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("1Uc8oUZ-JgpHo5Ibu"); // Buraya EmailJS kullanıcı kimliğinizi girin
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    emailjs.sendForm('service_3g08i6n', 'template_o6gs7uh', this)
+      .then(function(response) {
+        alert('Mesajınız başarıyla gönderildi.');
+      }, function(error) {
+        alert('Mesaj gönderilirken bir hata oluştu.');
+      });
+  });
+</script>
+
   </body>
 </html>

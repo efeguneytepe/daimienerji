@@ -1,28 +1,43 @@
-let i = 1;
+let currentIndex = 1;
+const totalPhotos = 2; // Fotoğraf sayısını buraya ekleyin
 
-let swipePhoto = document.querySelector("#swipePhoto");
+const swipePhoto = document.querySelector("#swipePhoto");
 
-function slide() {
-  swipePhoto.setAttribute("src", `./photos/photo${i}.jpeg`);
-  i++;
-  if (i > 2) {
-    i = 1;
-  }
+function updatePhoto(index) {
+  swipePhoto.setAttribute("src", `./photos/photo${index}.jpeg`);
 }
 
-setInterval("slide()", 3000);
+function slide() {
+  currentIndex++;
+  if (currentIndex > totalPhotos) {
+    currentIndex = 1;
+  }
+  updatePhoto(currentIndex);
+}
+
+const slideInterval = setInterval(slide, 3000);
 
 document.getElementById("left-button").addEventListener("click", function () {
-  i--;
-  if (i <= 1) {
-    i = 1;
+  clearInterval(slideInterval); // Sol butona tıkladığında otomatik geçişi durdur
+  currentIndex--;
+  if (currentIndex < 1) {
+    currentIndex = totalPhotos;
   }
-  swipePhoto.setAttribute("src", `./photos/photo${i}.jpeg`);
+  updatePhoto(currentIndex);
+  // Yeniden başlatma (isteğe bağlı)
+  setInterval(slide, 3000);
 });
+
 document.getElementById("right-button").addEventListener("click", function () {
-  i++;
-  if (i > 2) {
-    i = 1;
+  clearInterval(slideInterval); // Sağ butona tıkladığında otomatik geçişi durdur
+  currentIndex++;
+  if (currentIndex > totalPhotos) {
+    currentIndex = 1;
   }
-  swipePhoto.setAttribute("src", `./photos/photo${i}.jpeg`);
+  updatePhoto(currentIndex);
+  // Yeniden başlatma (isteğe bağlı)
+  setInterval(slide, 3000);
 });
+
+// İlk fotoğrafı yükle
+updatePhoto(currentIndex);
